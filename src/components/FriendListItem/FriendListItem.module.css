@@ -1,3 +1,11 @@
+p {
+  margin: 0;
+}
+.nameFriend {
+  font-weight: 500;
+  color: black;
+}
+
 .isOnline {
   color: green;
 }

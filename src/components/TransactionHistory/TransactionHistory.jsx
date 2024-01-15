@@ -1,10 +1,11 @@
 import { TransactionItem } from "../TransactionItem/TransactionItem";
-import "./TransactionHistory.module.css";
-import clsx from "clsx";
+import css from "./TransactionHistory.module.css";
+
 export const TransactionHistory = ({ items }) => {
+  // const colorRow = index % 2 === 0 ? "css.light" : "css.dark";
   return (
     <>
-      <table className="transaction-history">
+      <table className={css.transactionHistory}>
         <thead>
           <tr>
             <th>Type</th>
@@ -14,8 +15,11 @@ export const TransactionHistory = ({ items }) => {
         </thead>
 
         <tbody>
-          {items.map((item) => (
-            <tr key={item.id}>
+          {items.map((item, index) => (
+            <tr
+              key={item.id}
+              className={index % 2 === 0 ? css.light : css.dark}
+            >
               <TransactionItem item={item} />
             </tr>
           ))}

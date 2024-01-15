@@ -1,0 +1,15 @@
+.transactionHistory {
+  width: 500px;
+  text-align: center;
+}
+tbody tr {
+  background-color: #757175;
+  color: black;
+}
+.dark {
+  background-color: lightgray;
+}
+
+.light {
+  background-color: white;
+}
