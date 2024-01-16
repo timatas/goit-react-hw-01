@@ -1,6 +1,6 @@
-import userData from "../userData.json";
-import friends from "../friends.json";
-import transactions from "../transactions.json";
+import userData from "../data/userData.json";
+import friends from "../data/friends.json";
+import transactions from "../data/transactions.json";
 import { TaskTitle } from "./TaskTitle/TaskTitle";
 import { Profile } from "./Profile/Profile";
 import { FriendList } from "./FriendList/FriendList";
